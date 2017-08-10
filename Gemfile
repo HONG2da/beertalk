@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 #to see db board through => rails/db
 gem 'rails_db'
+
+gem 'pg', group: :production
+gem 'rails_12factor', group: :production
+
   
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
