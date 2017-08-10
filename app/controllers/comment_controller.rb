@@ -11,7 +11,7 @@ class CommentController < ApplicationController
       end
     @comments.save
 
-    redirect_to '/post/write'
+    redirect_to "/post/show/#{params[:id]}"
   end
 
   def destroy

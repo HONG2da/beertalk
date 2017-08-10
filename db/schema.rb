@@ -23,10 +23,18 @@ ActiveRecord::Schema.define(version: 20170706134104) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
-    t.string   "content"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "content"
+    t.integer  "monthly_rental_fee"
+    t.integer  "deposit"
+    t.string   "location"
+    t.string   "period"
+    t.string   "photos"
+    t.string   "phone_number"
+    t.string   "kakao_id"
+    t.string   "open_chat_url"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "users", force: :cascade do |t|
